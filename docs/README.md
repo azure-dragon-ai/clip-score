@@ -11,4 +11,6 @@ virtualenv clip
 # virtualenv --system-site-packages clip
 source clip/bin/activate
 deactivate
+
+pip install torch -i https://pypi.tuna.tsinghua.edu.cn/simple/
 ```
