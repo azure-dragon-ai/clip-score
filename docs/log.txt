@@ -45,3 +45,9 @@ Traceback (most recent call last):
   File "/data/home/zhangchunsheng/clip/lib/python3.9/site-packages/clip_score/clip_score.py", line 144, in _combine_without_prefix
     for name in os.listdir(folder_path):
 NotADirectoryError: [Errno 20] Not a directory: '5f86fa77111edb5389b46f5bbd3fcd08_test.jpg'
+
+python -m clip_score a b --real_flag img --fake_flag img
+Loading CLIP model: ViT-B/32
+Calculating CLIP Score:
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.60it/s]
+CLIP Score:  47.78722381591797
