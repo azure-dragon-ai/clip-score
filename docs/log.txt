@@ -27,3 +27,21 @@ created virtual environment CPython3.9.17.final.0-64 in 981ms
   seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/data/home/zhangchunsheng/.local/share/virtualenv)
     added seed packages: pip==23.3.1, setuptools==69.0.2, wheel==0.42.0
   activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+python -m clip_score 5f86fa77111edb5389b46f5bbd3fcd08_test.jpg 1_2_1_00002_.png --real_flag img --fake_flag img
+Loading CLIP model: ViT-B/32
+100%|███████████████████████████████████████| 338M/338M [00:14<00:00, 24.3MiB/s]
+Traceback (most recent call last):
+  File "/usr/lib64/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib64/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/data/home/zhangchunsheng/clip/lib/python3.9/site-packages/clip_score/__main__.py", line 3, in <module>
+    clip_score.clip_score.main()
+  File "/data/home/zhangchunsheng/clip/lib/python3.9/site-packages/clip_score/clip_score.py", line 212, in main
+    dataset = DummyDataset(args.real_path, args.fake_path,
+  File "/data/home/zhangchunsheng/clip/lib/python3.9/site-packages/clip_score/clip_score.py", line 89, in __init__
+    self.real_folder = self._combine_without_prefix(real_path)
+  File "/data/home/zhangchunsheng/clip/lib/python3.9/site-packages/clip_score/clip_score.py", line 144, in _combine_without_prefix
+    for name in os.listdir(folder_path):
+NotADirectoryError: [Errno 20] Not a directory: '5f86fa77111edb5389b46f5bbd3fcd08_test.jpg'
