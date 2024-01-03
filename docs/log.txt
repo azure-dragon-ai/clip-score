@@ -1,0 +1,29 @@
+pip install virtualenv -i https://pypi.tuna.tsinghua.edu.cn/simple/
+Defaulting to user installation because normal site-packages is not writeable
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple/
+Collecting virtualenv
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/83/22/54b1180756d2d6194bcafb7425d437c3034c4bff92129c3e1e633079e2c4/virtualenv-20.25.0-py3-none-any.whl (3.8 MB)
+     |████████████████████████████████| 3.8 MB 28.5 MB/s
+Requirement already satisfied: platformdirs<5,>=3.9.1 in ./.local/lib/python3.9/site-packages (from virtualenv) (4.0.0)
+Collecting filelock<4,>=3.12.2
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/81/54/84d42a0bee35edba99dee7b59a8d4970eccdd44b99fe728ed912106fc781/filelock-3.13.1-py3-none-any.whl (11 kB)
+Collecting distlib<1,>=0.3.7
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/8e/41/9307e4f5f9976bc8b7fea0b66367734e8faf3ec84bc0d412d8cfabbb66cd/distlib-0.3.8-py2.py3-none-any.whl (468 kB)
+     |████████████████████████████████| 468 kB 67.9 MB/s
+Installing collected packages: filelock, distlib, virtualenv
+  WARNING: Value for scheme.platlib does not match. Please report this to <https://github.com/pypa/pip/issues/10151>
+  distutils: /home/zhangchunsheng/.local/lib/python3.9/site-packages
+  sysconfig: /home/zhangchunsheng/.local/lib64/python3.9/site-packages
+  WARNING: Additional context:
+  user = True
+  home = None
+  root = None
+  prefix = None
+Successfully installed distlib-0.3.8 filelock-3.13.1 virtualenv-20.25.0
+
+virtualenv clip
+created virtual environment CPython3.9.17.final.0-64 in 981ms
+  creator CPython3Posix(dest=/data/home/zhangchunsheng/clip, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/data/home/zhangchunsheng/.local/share/virtualenv)
+    added seed packages: pip==23.3.1, setuptools==69.0.2, wheel==0.42.0
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
