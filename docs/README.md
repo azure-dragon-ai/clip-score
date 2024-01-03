@@ -10,4 +10,5 @@ virtualenv clip
 # virtualenv --python /usr/local/webserver/python3.6/bin/python3.6 clip
 # virtualenv --system-site-packages clip
 source clip/bin/activate
+deactivate
 ```
