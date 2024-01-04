@@ -44,4 +44,5 @@ sudo docker pull yiluxiangbei/clip-score:v1
 sudo docker pull yiluxiangbei/clip-score:v2
 
 sudo docker run --rm -it -v $(pwd)/a:/a -v $(pwd)/b:/b --privileged yiluxiangbei/clip-score:v1 python -m clip_score /a /b --real_flag img --fake_flag img
+sudo docker run --rm -it -v $(pwd)/a:/a -v $(pwd)/b:/b --privileged yiluxiangbei/clip-score:v2 python -m clip_score /a /b --real_flag img --fake_flag img
 ```
