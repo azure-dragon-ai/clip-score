@@ -51,3 +51,22 @@ Loading CLIP model: ViT-B/32
 Calculating CLIP Score:
 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.60it/s]
 CLIP Score:  47.78722381591797
+
+sudo docker run --rm -it --privileged yiluxiangbei/clip-score:v1 python -m clip_score a b --real_flag img --fake_flag img
+[sudo] password for zhangchunsheng:
+Loading CLIP model: ViT-B/32
+100%|███████████████████████████████████████| 338M/338M [00:15<00:00, 22.6MiB/s]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/local/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/site-packages/clip_score/__main__.py", line 3, in <module>
+    clip_score.clip_score.main()
+  File "/usr/local/lib/python3.6/site-packages/clip_score/clip_score.py", line 214, in main
+    transform=preprocess, tokenizer=clip.tokenize)
+  File "/usr/local/lib/python3.6/site-packages/clip_score/clip_score.py", line 89, in __init__
+    self.real_folder = self._combine_without_prefix(real_path)
+  File "/usr/local/lib/python3.6/site-packages/clip_score/clip_score.py", line 144, in _combine_without_prefix
+    for name in os.listdir(folder_path):
+FileNotFoundError: [Errno 2] No such file or directory: 'a'
