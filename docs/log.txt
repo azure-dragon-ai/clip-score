@@ -78,3 +78,9 @@ Loading CLIP model: ViT-B/32
 Calculating CLIP Score:
 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.60it/s]
 CLIP Score:  46.40070724487305
+
+sudo docker run --rm -it -v $(pwd)/a:/a -v $(pwd)/b:/b --privileged yiluxiangbei/clip-score:v2 python -m clip_score /a /b --real_flag img --fake_flag img
+Loading CLIP model: ViT-B/32
+Calculating CLIP Score:
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.75it/s]
+CLIP Score:  46.40070724487305
