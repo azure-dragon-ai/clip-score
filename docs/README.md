@@ -36,4 +36,7 @@ python -m clip_score a b --real_flag img --fake_flag img
 sudo docker run --rm -it --privileged -v $(pwd):/app python:3.6 /bin/bash
 
 sudo docker build -t yiluxiangbei/clip-score:v1 -f docker/Dockerfile .
+sudo docker push yiluxiangbei/clip-score:v1
+
+sudo docker pull yiluxiangbei/clip-score:v1
 ```
