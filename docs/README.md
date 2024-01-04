@@ -31,4 +31,8 @@ wget https://api.studay.cn:8083/images/test/user_img/orig/2024/01/03/5f86fa77111
 python -m clip_score 5f86fa77111edb5389b46f5bbd3fcd08_test.jpg 1_2_1_00002_.png --real_flag img --fake_flag img
 
 python -m clip_score a b --real_flag img --fake_flag img
+
+sudo docker run --rm -it --privileged -v $(pwd):/app python:3.6 /bin/bash
+
+sudo docker build -t yiluxiangbei/clip-score:v1 -f docker/Dockerfile .
 ```
