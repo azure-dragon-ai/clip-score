@@ -1,0 +1,4 @@
+FROM yiluxiangbei/clip-score:v1
+WORKDIR /app
+COPY . .
+RUN python -m clip_score a b --real_flag img --fake_flag img
