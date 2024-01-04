@@ -5,6 +5,7 @@ sudo docker search clip
 # https://pypi.douban.com/simple/
 # http://mirrors.aliyun.com/pypi/simple/
 # https://pypi.mirrors.ustc.edu.cn/simple/
+# https://mirrors.cloud.tencent.com/pypi/simple/
 pip install virtualenv -i https://pypi.tuna.tsinghua.edu.cn/simple/
 virtualenv clip
 # virtualenv --python /usr/local/webserver/python3.6/bin/python3.6 clip
