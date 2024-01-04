@@ -48,4 +48,15 @@ sudo docker run --rm -it -v $(pwd)/a:/a -v $(pwd)/b:/b --privileged yiluxiangbei
 
 sudo docker pull yiluxiangbei/clip-score:v2
 sudo docker run --rm -it -v $(pwd)/a:/a -v $(pwd)/b:/b --privileged yiluxiangbei/clip-score:v2 python -m clip_score /a /b --real_flag img --fake_flag img
+
+sudo docker run -p 3333:3333 -d --name nsfwjs andresribeiroo/nsfwjs:1.6
+sudo docker ps
+sudo docker stop 94bb98f3d3ae
+sudo docker rm 94bb98f3d3ae
+
+curl --request POST http://localhost:3333/single/multipart-form \
+  --header 'Content-Type: multipart/form-data' \
+  --form 'content=@1_2_1_00002_.jpg'
+
+url --request POST localhost:8080/nsfw --header 'Content-Type: multipart/form-data' --data-binary 'image=@/full/path/to/picture.jpg'
 ```

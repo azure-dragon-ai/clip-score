@@ -84,3 +84,9 @@ Loading CLIP model: ViT-B/32
 Calculating CLIP Score:
 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.75it/s]
 CLIP Score:  46.40070724487305
+
+curl --request POST http://localhost:3333/single/multipart-form \
+  --header 'Content-Type: multipart/form-data' \
+  --form 'content=@1_2_1_00002_.jpg'
+{"prediction":[{"className":"Porn","probability":0.6551447510719299},{"className":"Sexy","probability":0.1533663123846054},{"className":"Neutral","probability":0.09124277532100677},{"className":"Hentai","probability":0.06661853194236755},{"className":"Drawing","probability":0.03362765163183212}]}
+
