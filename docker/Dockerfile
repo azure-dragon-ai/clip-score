@@ -4,5 +4,5 @@ RUN echo 'Asia/Shanghai' > /etc/timezone
 WORKDIR /app
 COPY . .
 RUN pip install torch -i https://pypi.douban.com/simple/
-RUN pip install git+https://gitee.com/xdjiangkai/CLIP
+RUN pip install git+https://gitee.com/xdjiangkai/CLIP -i https://pypi.douban.com/simple/
 RUN pip install clip-score -i https://pypi.douban.com/simple/
