@@ -70,3 +70,11 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.6/site-packages/clip_score/clip_score.py", line 144, in _combine_without_prefix
     for name in os.listdir(folder_path):
 FileNotFoundError: [Errno 2] No such file or directory: 'a'
+
+sudo docker run --rm -it -v $(pwd)/a:/a -v $(pwd)/b:/b --privileged yiluxiangbei/clip-score:v1 python -m clip_score /a /b --real_flag img --fake_flag img
+Loading CLIP model: ViT-B/32
+ 76%|█████████████████████████████▋         | 257M/338M [01:04<00:20, 4.18MiB/s]
+100%|███████████████████████████████████████| 338M/338M [01:23<00:00, 4.23MiB/s]
+Calculating CLIP Score:
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.60it/s]
+CLIP Score:  46.40070724487305
