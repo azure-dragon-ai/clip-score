@@ -8,9 +8,11 @@ sudo docker search clip
 # https://mirrors.cloud.tencent.com/pypi/simple/
 pip install virtualenv -i https://pypi.tuna.tsinghua.edu.cn/simple/
 virtualenv clip
+virtualenv score
 # virtualenv --python /usr/local/webserver/python3.6/bin/python3.6 clip
 # virtualenv --system-site-packages clip
 source clip/bin/activate
+source score/Scripts/activate
 deactivate
 
 mkdir ~/.pip
