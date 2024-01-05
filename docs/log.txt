@@ -90,3 +90,17 @@ curl --request POST http://localhost:3333/single/multipart-form \
   --form 'content=@1_2_1_00002_.jpg'
 {"prediction":[{"className":"Porn","probability":0.6551447510719299},{"className":"Sexy","probability":0.1533663123846054},{"className":"Neutral","probability":0.09124277532100677},{"className":"Hentai","probability":0.06661853194236755},{"className":"Drawing","probability":0.03362765163183212}]}
 
+
+docker ps
+CONTAINER ID   IMAGE                        COMMAND                   CREATED              STATUS              PORTS
+    NAMES
+e03d2abb73b3   captainji/jupyterlab:3.0.5   "/bin/sh -c 'jupyter…"   About a minute ago   Up About a minute   22/tcp, 0.0.0.0:8888->8888/tcp      jupyterlab3
+567b179d3ce0   c/squoosh-webapi:1.2         "docker-entrypoint.s…"   5 months ago         Up 2 weeks          0.0.0.0:49156->1988/tcp
+   Squoosh-WebAPI
+0863dc29b521   c/nsfwjs-webapi:1.1          "yarn start node bui…"   5 months ago         Up 2 weeks          3000/tcp, 0.0.0.0:49157->1989/tcp   Nsfwjs-WebAPI
+
+docker images
+REPOSITORY             TAG       IMAGE ID       CREATED        SIZE
+c/squoosh-webapi       1.2       a2e2008093c9   5 months ago   1.32GB
+c/nsfwjs-webapi        1.1       e8e313e3884b   5 months ago   1.86GB
+captainji/jupyterlab   3.0.5     73cdc8477c48   2 years ago    1.44GB

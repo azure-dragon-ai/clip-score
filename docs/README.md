@@ -25,6 +25,12 @@ pip install git+https://github.com/openai/CLIP.git
 pip install git+https://gitee.com/xdjiangkai/CLIP
 pip install clip-score -i https://pypi.tuna.tsinghua.edu.cn/simple/
 
+docker pull captainji/jupyterlab:3.0.5
+docker scout quickview captainji/jupyterlab:3.0.5
+docker run -d --name jupyterlab3 -p 8888:8888 -v $(pwd):/opt/notebooks captainji/jupyterlab:3.0.5
+docker logs -f e03d2abb73b3
+http://127.0.0.1:8888/lab?token=786ddb830c836091e6958dd62a06ea54c7f46dc36e60d283
+
 wget https://api.studay.cn:8083/images/test/user_img/tmp/2024/01/03/1_2_1_00002_.png --no-check-certificate
 
 wget https://api.studay.cn:8083/images/test/user_img/orig/2024/01/03/5f86fa77111edb5389b46f5bbd3fcd08_test.jpg --no-check-certificate
